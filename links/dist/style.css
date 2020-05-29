@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+body {
+  --bg-color: #fdcfd9;
+  background-color: var(--bg-color);
+  background-image: linear-gradient(var(--bg-color) 2%, #ffeded 108%);
+  color: #000;
+  text-align: center;
+  min-height: 100vh;
+  margin-top: 30px;
+  font-family: Roboto, sans-serif;
+}
+.logo {
+  width: 120px;
+}
+.cover {
+  width: 120px;
+  margin-bottom: 10px;
+  border: 2px solid #000;
+}
+a.featured:hover,
+a:hover {
+  background-color: #86bff3;
+  color: #000;
+}
+a {
+  display: block;
+  max-width: 400px;
+  margin: 0 auto 15px;
+  padding: 15px 20px;
+  font-size: 14px;
+  letter-spacing: 1.25px;
+  color: #000;
+  border: 2px solid #000;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+a.featured {
+  position: relative;
+  background-color: #b2e5ef;
+  color: #000000;
+  font-weight: 700;
+}
+/*
+A seperate border for the featured item, currently not wanted
+  a.featured:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 2px solid var(--bg-color);
+}*/
+h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: medium;
+  letter-spacing: 0.15px;
+}
